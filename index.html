@@ -2,63 +2,77 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fábio Ramos - Game Developer</title>
-  <style>
-    body {
-      font-family: Arial;
-      background: #0f172a;
-      color: #e2e8f0;
-      margin: 0;
-    }
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-    }
-    .project {
-      background: #1e293b;
-      padding: 15px;
-      margin-bottom: 20px;
-      border-radius: 10px;
-    }
-    a { color: #38bdf8; text-decoration: none; }
-  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <div class="container">
-    <h1>Fábio Ramos</h1>
-    <p>Game Developer | Unity | Unreal | Godot</p>
 
-    <h2>Projects</h2>
+<body class="bg-slate-900 text-slate-200">
 
-    <div class="project">
-      <h3>Jogo da Independência</h3>
-      <p>Short description of the game.</p>
-      <a href="projects/game1.html">View Project</a>
+  <!-- HEADER -->
+  <header class="text-center py-12">
+    <h1 class="text-4xl font-bold">Fábio Ramos</h1>
+    <p class="text-slate-400 mt-2">Game Developer | Unity | Unreal | Godot</p>
+  </header>
+
+  <!-- PROJECTS -->
+  <section class="max-w-5xl mx-auto px-4">
+    <h2 class="text-2xl font-semibold mb-6">Brazilian Chamber of Deputies Projects</h2>
+
+    <div class="grid md:grid-cols-2 gap-6">
+
+      <!-- PROJECT CARD -->
+      <div class="bg-slate-800 rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition">
+        <img src="assets/gifs/game1.gif" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">Brazil Independence Game</h3>
+          <p class="text-slate-400 text-sm mt-2">
+            Short description of the game.
+          </p>
+
+          <div class="mt-4 flex gap-4">
+            <a href="projects/game1.html" class="text-sky-400 hover:underline">Details</a>
+            <a href="LINK_ITCH" target="_blank" class="text-green-400 hover:underline">Play</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- DUPLICAR PARA MAIS PROJETOS -->
+      <div class="bg-slate-800 rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition">
+        <img src="assets/gifs/game1.gif" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">Trivia - Week of Modern Art</h3>
+          <p class="text-slate-400 text-sm mt-2">
+            Short description of the game.
+          </p>
+
+          <div class="mt-4 flex gap-4">
+            <a href="projects/game2.html" class="text-sky-400 hover:underline">Details</a>
+            <a href="LINK_ITCH" target="_blank" class="text-green-400 hover:underline">Play</a>
+          </div>
+        </div>
+      </div>
+      <!-- DUPLICAR PARA MAIS PROJETOS -->
+
     </div>
+  </section>
 
-    <div class="project">
-      <h3>Trivia - Semana de Arte Moderna</h3>
-      <p>Another short description.</p>
-      <a href="projects/game2.html">View Project</a>
+  <!-- EXPERIENCE -->
+  <section class="max-w-5xl mx-auto px-4 mt-16">
+    <h2 class="text-2xl font-semibold mb-6">Experience</h2>
+
+    <div class="bg-slate-800 p-6 rounded-2xl">
+      <h3 class="font-semibold">Unannounced Game (NDA)</h3>
+      <p class="text-slate-400 mt-2">
+        Unity (C#) — Implemented AI systems and optimized performance, reducing frame time by 30%.
+      </p>
     </div>
+  </section>
 
-    <div class="project">
-      <h3>Se liga no lixo!</h3>
-      <p>Another short description.</p>
-      <a href="projects/game3.html">View Project</a>
-    </div>
+  <!-- FOOTER -->
+  <footer class="text-center py-10 text-slate-500">
+    © 2026 Fábio Ramos
+  </footer>
 
-    <div class="project">
-      <h3>Quem é Você Decidindo o Futuro do País</h3>
-      <p>Another short description.</p>
-      <a href="projects/game4.html">View Project</a>
-    </div>
-
-    <h2>Experience</h2>
-    <p><strong>Unannounced Game (NDA)</strong><br>
-    Unity (C#) – Implemented AI and optimized performance.</p>
-
-  </div>
 </body>
 </html>
